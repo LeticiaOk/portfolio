@@ -1,0 +1,325 @@
+/*Resetando CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+header>.conteudo h1,
+.home>.conteudo h1 {
+    color: rgb(235, 69, 97);
+}
+
+.conteudo {
+    max-width: 1120px;
+    margin: auto;
+}
+
+
+/*Estilo do cabeçalho*/
+body {
+    background-color: rgb(27, 27, 27);
+
+}
+
+header {
+    position: fixed;
+    background-color: rgb(23, 23, 23);
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+header>.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>.conteudo>.menu a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+header>.conteudo>.menu a:hover {
+    color: #ffffff7a;
+}
+
+header>.conteudo>.menu a:active {
+    color: blue;
+}
+
+.menu>ul {
+    display: flex;
+    gap: 40px;
+}
+
+
+/*Estilo hero*/
+
+.home {
+    background-color: rgb(35, 35, 35);
+    padding-top: 150px;
+    height: 90vh;
+}
+
+.home>.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.informacoes {
+    font-size: 2rem;
+    line-height: 65px;
+}
+
+.home>.conteudo .informacoes p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.informacoes>a {
+    background-color: #eb4561;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px #eb4561;
+    transition: 0.3s;
+
+}
+
+.informacoes>a:hover {
+    box-shadow: 0px 0px 20px 0px #eb4561;
+}
+
+.redes-sociais {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais>li a {
+    color: #eb4561;
+    transition: 0.1s;
+
+
+}
+
+.redes-sociais>li a:hover {
+    color: rgb(27, 27, 27);
+}
+
+.redes-sociais>li a i {
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+    border-radius: 50%;
+    transition: 0.1s;
+
+}
+
+.redes-sociais>li a i:hover{
+    background-color: #eb4561;
+}
+
+
+.container-foto img {
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px 0px #eb4561;
+    width: 430px;
+    height: 430px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+
+@keyframes flutuar{
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*Estilo sobre*/
+
+.sobre {
+    background-color: rgb(27, 27, 27);
+}
+
+.sobre > .conteudo{
+    padding: 60px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: solid 4px #eb4561;
+
+    border-radius: 15px;
+    background-color: rgb(35, 35, 35);
+    transition: 0.1s;
+    flex-wrap: wrap;
+
+}
+
+.sessao-titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 70px;
+}
+
+span {
+    color: #eb4561;
+}
+
+.sobre-foto img {
+    border-radius: 20px;
+
+}
+
+.sobre-texto {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.sobre-texto-titulo-nome {
+    font-size: 2rem;
+}
+
+.sobre-texto-titulo-area {
+    color: #eb4561;
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.sobre-texto-paragrafo {
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+.sobre-texto-enderecos {
+    line-height: 30px;
+}
+
+.sobre-texto-curriculo {
+    margin-top: 30px;
+}
+
+.sobre-texto-curriculo a {
+    background-color: #eb4561;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.sobre-texto-curriculo a:hover {
+    box-shadow: 0px 0px 20px 0px #eb4561;
+}
+
+/*Estilo Skills*/
+
+.skills {
+    background-color: rgb(35, 35, 35);
+}
+
+.skills>.conteudo {
+    padding: 90px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.skills-item {
+    text-align: center;
+    width: 210px;
+    height: 210px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    font-size: 2rem;
+    border-radius: 15px;
+    gap: 20px;
+    box-shadow: 10px 10px 0px 0px rgb(235, 69, 97);
+    font-weight: 600;
+    transition: 0.1s;
+
+}
+
+.skills-item:hover{
+    background-color: rgb(20, 20, 20);
+    box-shadow: none;
+    border: solid 3px #eb4561;
+    
+
+}
+
+.skills-item i {
+    color: #eb4561;
+    font-size: 6rem;
+}
+
+/* Estilizando a scrollbar vertical */
+/* Estilo da trilha */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(17, 17, 17);
+
+    /* Largura da scrollbar */
+}
+
+/* Estilo do "pulso" da scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: #565656;
+    /* Cor do "pulso" */
+    border-radius: 5px;
+    /* Raio das bordas do "pulso" */
+}
+
+/* Estilizando a scrollbar horizontal */
+/* Mesmas propriedades, trocando o eixo para horizontal */
+::-webkit-scrollbar {
+    height: 10px;
+    /* Altura da scrollbar */
+}
