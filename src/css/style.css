@@ -24,10 +24,12 @@ ul {
     list-style: none;
 }
 
-header>.conteudo h1,
+
 .home>.conteudo h1 {
     color: rgb(235, 69, 97);
 }
+
+
 
 .conteudo {
     max-width: 1120px;
@@ -45,10 +47,10 @@ body {
 header {
     position: fixed;
     background-color: rgb(23, 23, 23);
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     z-index: 2;
-    box-shadow: 0px 0px 20px 0px #eb4561;
+    /* box-shadow: 0px 0px 20px 0px #eb4561; */
 
 }
 
@@ -57,7 +59,19 @@ header>.conteudo {
     justify-content: space-between;
     align-items: center;
 }
-
+header>.conteudo>a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header>.conteudo>a>.logo-img{
+    width: 45px;
+    background-color: #eb4561;
+    border-radius: 10px;
+}
+header>.conteudo>a >h1{
+    font-size: 20px;
+}
 header>.conteudo>.menu a {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -150,21 +164,23 @@ header>.conteudo>.menu a:active {
 .home > .conteudo > .container-foto img {
     z-index: 1;
     border-radius: 50%;
-    box-shadow: 0px 0px 25px 0px #eb4561;
+    /* box-shadow: 0px 0px 25px 0px #eb4561; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
+    background-color: #eb4561;
+    /* padding: 30px 0px 0 0px; */
 }
 
-@keyframes flutuar{
+/* @keyframes flutuar{
     0% {
         top: 0;
     }
     100%{
         top: 30px;
     }
-}
+} */
 
 /*Estilo sobre*/
 
@@ -173,14 +189,15 @@ header>.conteudo>.menu a:active {
 }
 
 .sobre > .conteudo{
-    padding: 60px 20px;
+    padding: 50px 20px;
 }
 
 .sobre-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     padding: 30px 0px;
-    border-top: solid 4px #eb4561;
+    /* border-top: solid 4px #eb4561; */
 
     border-radius: 15px;
     background-color: rgb(35, 35, 35);
@@ -199,8 +216,10 @@ span {
 
 .sobre-foto img {
     border-radius: 20px;
-    max-width: 100%;
+    max-width: 450px;
     padding: 10px;
+    /* background-color: #eb4561; */
+    /* border-top: #eb4561 solid 3px; */
 }
 
 .sobre-texto {
@@ -221,11 +240,13 @@ span {
     color: #eb4561;
     font-size: 1rem;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 800;
 }
 
+.destaque{
+    font-weight: 800;
+}
 .sobre-texto-paragrafo {
-    line-height: 25px;
     font-size: 1rem;
 }
 
@@ -269,18 +290,18 @@ span {
 
 .skills-item {
     text-align: center;
-    width: 210px;
-    height: 210px;
+    width: 190px;
+    height: 190px;
     background-color: rgb(27, 27, 27);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px 50px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border-radius: 15px;
     gap: 20px;
-    box-shadow: 10px 10px 0px 0px rgb(235, 69, 97);
+    /* box-shadow: 10px 10px 0px 0px rgb(235, 69, 97); */
     font-weight: 600;
     transition: 0.1s;
 }
@@ -293,8 +314,9 @@ span {
 
 .skills-item i {
     color: #eb4561;
-    font-size: 6rem;
+    font-size: 5.5rem;
 }
+
 
 /*Estilo Projetos*/
 
@@ -309,7 +331,7 @@ span {
 .projetos > .conteudo > .projeto-item{
     border-radius: 20px;
     background-color: rgb(35, 35, 35);
-    border: 4px #eb4561 solid;
+    border: 10px rgb(35, 35, 35) solid;
     width: 500px;
     height: 300px;
     background-size:cover;
@@ -351,7 +373,7 @@ animation: flutuar 2s ease-in-out infinite alternate;
     width: 100%;
     height: 100%;
     background-color: #000000b8;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,6 +448,9 @@ footer{
         max-width: 200px;
         margin-top: 30px;
     }
+
+    
+
 }
 
 @media(max-width: 800px){
@@ -447,6 +472,12 @@ footer{
         gap: 25px;
     }
     
+}
+
+@media(max-width: 480px){
+    header>.conteudo>a >h1{
+        display: none;
+    }
 }
 
 /* Estilizando a scrollbar vertical */
@@ -472,3 +503,5 @@ footer{
     height: 10px;
     /* Altura da scrollbar */
 }
+
+/*Colocar max-width na foto para ficar menor*/
