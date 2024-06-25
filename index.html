@@ -24,8 +24,9 @@
 <body>
     <header>
         <div class="conteudo">
-            <a href="#home">
-                <h1 class="logo">LP</h1>
+            <a href="home">
+                <img class="logo-img" src="src/images/perfil7.png" alt="logo-img">
+                <h1><span>L</span>etícia</h1>
             </a>
             <nav class="menu">
                 <ul>
@@ -48,9 +49,9 @@
     <section class="home" id="home">
         <div class="conteudo">
             <div class="informacoes">
-                <h1>Bem vindo!</h1>
+                <h1>Bem-vindo,</h1>
                 <h2>Sou Letícia Alves</h2>
-                <p>Desenvolvedora Frontend</p>
+                <p>Desenvolvedora Full Stack</p>
 
                 <a href="#sobre">Sobre mim <i class="fas fa-arrow-circle-down"></i></a>
 
@@ -80,7 +81,7 @@
                 </ul>
             </div>
             <div class="container-foto">
-                <img src="src/images/perfil5.png" alt="Foto de animção Letícia Alves">
+                <img src="src/images/perfil7.png" alt="Foto de animção Letícia Alves">
             </div>
         </div>
     </section>
@@ -89,22 +90,19 @@
         <div class="conteudo">
             <div class="sobre-container">
                 <div class="sobre-foto">
-                    <img src="src/images/foto-sobre.png" alt="Foto Letícia Alves">
+                    <img src="src/images/All the data-cuate.png" alt="Foto Letícia Alves"> 
                 </div>
                 <div class="sobre-texto">
                     <div class="sobre-texto-titulo">
                         <h2 class="sobre-texto-titulo-nome">Letícia Alves</h2>
-                        <h3 class="sobre-texto-titulo-area">Desenvolvedora Frontend</h3>
+                        <h3 class="sobre-texto-titulo-area">Desenvolvedora Full Stack</h3>
                     </div>
-
-                    <p class="sobre-texto-paragrafo">Iniciei na área em 2023 com linguagens front-end como HTML, CSS e Java Script, logo após engajei os estudos em
-                        lógica de programação mais avançada com Python e atualmente iniciei meus estudos em PHP e MySQL.
-                        Meu objetivo profissional é me desenvolver e contribuir na área de desenvolvimento Full Stack.
+                    Sou uma desenvoldora full stack em formação que Iniciou a carreira acadêmica em Sistemas para Internet, desenvolvendo com HTML, CSS e JavaScript. Realizei projetos com os quais aprimorei minhas habilidades em desenvolvimento web, implementando frameworks como React e WordPress. No back-end, adquiri conhecimentos em Python, PHP, MySQL e APIs. Meu objetivo é me desenvolver e contribuir como desenvolvedora Full Stack.
                     </p>
 
                     <div class="sobre-texto-enderecos">
-                        <p><span>Email:</span> leticiaalves6540@gmail.com</p>
-                        <p><span>Local:</span> São Paulo - SP</p>
+                        <p><span class="destaque">Email:</span> leticiaalves6540@gmail.com</p>
+                        <p><span class="destaque">Local:</span> São Paulo - SP</p>
                     </div>
 
                     <div class="sobre-texto-curriculo">
@@ -146,8 +144,10 @@
                 <i class="fab fa-git-alt"></i>
                 <p>Git</p>
             </div>
+            <!-- <img src="src/images/retro computer-pana.png" alt=""> -->
             <div class="skills-item">
                 <i class="devicon-mysql-original"></i>
+
                 <p>MySQL</p>
             </div>
             <div class="skills-item">
@@ -158,10 +158,10 @@
                 <i class="devicon-figma-plain"></i>
                 <p>Figma</p>
             </div>
-            <div class="skills-item">
+            <!-- <div class="skills-item">
                 <i class="devicon-canva-original"></i>
                 <p>Canva</p>
-            </div>
+            </div> -->
         </div>
     </section>
     <section class="projetos" id="projetos">
@@ -185,7 +185,25 @@
                 </div>
                 </div>
             </div>
-            <div class="projeto-item ativo" style="background-image: url(src/images/gta-rolagem.png);">
+            <div class="projeto-item ativo" style="background-image: url(src/images/curd-delta-login-rolagem.png);">
+                <div class="overlay">
+                    <p>CRUD empresa de jogos: Delta</p>
+                    <div class="projeto-link">
+                        <a href="https://github.com/LeticiaOk/crud-delta" class="projeto-link-item"><i class="fas fa-eye"></i> Página</a>
+                        <a href="https://github.com/LeticiaOk/crud-delta" target="_blank" class="projeto-link-item">Código <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto-item ativo" style="background-image: url(src/images/api-vagas-rolagem.png);">
+                <div class="overlay">
+                    <p>API vagas de emprego: Desemprego</p>
+                    <div class="projeto-link">
+                        <a href="https://github.com/LeticiaOk/api-desemprego" class="projeto-link-item"><i class="fas fa-eye"></i> Página</a>
+                        <a href="https://github.com/LeticiaOk/api-desemprego" target="_blank" class="projeto-link-item">Código <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projeto-item" style="background-image: url(src/images/gta-rolagem.png);">
                 <div class="overlay">
                     <p>Grand Theft Auto</p>
                     <div class="projeto-link">
@@ -195,7 +213,7 @@
                     
                 </div>
             </div>
-            <div class="projeto-item ativo" style="background-image: url(src/images/tom-jazz-scholl-rolagem.png);">
+            <div class="projeto-item" style="background-image: url(src/images/tom-jazz-scholl-rolagem.png);">
                 <div class="overlay">
                     <p> Tom Jazz School</p>
                     <div class="projeto-link">
@@ -222,6 +240,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         <button class="btn-mostrar-projetos">Mostrar mais</button>
     </section>
