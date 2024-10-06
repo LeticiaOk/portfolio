@@ -1,2 +1,2 @@
-# Portifólio:
-> ## Link: [Página do portifólio 🚀](https://leticiaok.github.io/portifolio/)
+# Portfólio:
+> ## Link: [Página do portfólio 🚀](https://leticiaok.github.io/portifolio/)
